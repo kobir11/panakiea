@@ -1,14 +1,4 @@
-header{
-    background-color: bisque;
-}
 
-.overlay {
-    background-color: rgba(3, 3, 3, 0.5);
-    overflow: hidden;
-}
-.section-content{
-    margin: 0 auto;
-}
 .navbar-brand h2 {
     text-align: left;
     font-size: 30px;
@@ -20,7 +10,6 @@ header{
     font-size: 13px;
     color: #f09712;
 }
-
 .navbar-nav .nav-item .nav-link {
     padding: 5px 15px;
     margin: 5px;
@@ -30,25 +19,15 @@ header{
     border-radius: 30px;
     text-align: center;
 }
-.navbar-nav .nav-item.active .nav-link, .navbar-nav .nav-item .nav-link:hover {
+.navbar-nav .nav-item .nav-link:hover {
     background: #F0532D;
     color: #fff;
 }
-.top-fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9;
-    background: #fff;
-    box-shadow: 0px 0px 20px #a5a5a5;
-    background-color: #d75d0e;
-}
-
 .banner {
     width: 100%;
     float: left;
     background-color: #000000;
-    background-image: url(../../assets/images/bg/banner.png);
+    background-image: url(..);
     background-size: cover;
     background-repeat: none;
     background-position: center;
@@ -68,26 +47,25 @@ header{
     color: #fff;
     margin-bottom: 10%;
 }
-.bl-item{
+.bl-item {
     float: left;
 }
-.bl-item .item-img {
-    width:120px;
-    margin: 0 auto;
-}
-.bl-item .item-img img{
+.bl-item .item-img img {
     width: 100%;
-    transition: all 0.3s linear; 
-
+    transition: all 0.3s linear;
 }
 .bl-item:hover .item-img img {
     width: 100%;
     transform: rotate(45deg);
 }
-.bl-item .item-info {
+.bl-item .item-img img {
+    width: 100%;
+    transition: all 0.3s linear;
+    border-radius: 100%;
+    padding: 20px;
 }
 .bl-item .item-info h2 {
-    color: #fff;
+    color:#fff;
     font-size: 25px;
     margin: 10px 0;
     text-align: center;
@@ -104,48 +82,33 @@ header{
     margin: 0 auto;
     position: relative;
 }
-.news .overlay{
+.news .overlay {
     background-color: rgba(3, 3, 3, 0.1);
 }
-.news .section-title{
+.news .section-title {
     text-align: center;
     padding: 70px;
     font-size: 26px;
     color: #4d4444;
 }
-.feature .feature-item {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 30px;
-}
 .feature-item .fl-item {
     float: left;
-
 }
 .fl-item .item-img {
     width: 100%;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
     overflow: hidden;
     position: relative;
-
 }
-.fl-item .item-img img{
+.fl-item .item-img img {
     width: 100%;
     transition: all 0.3s linear;
 }
-
-.fl-item:hover .item-img img {
-    -ms-transform: scale(.8);
-    -webkit-transform: scale(.8);
-    transform: scale(.8);
-}
-.fl-item .item-info{
+.fl-item .item-info {
     padding: 0 30px;
     text-align: center;
 }
-.fl-item .item-info h2{
+.fl-item .item-info h2 {
     padding: 10px;
     font-size: 20px;
     color: #212121;
@@ -170,6 +133,11 @@ header{
     color: #44413f;
     font-size: 14px;
 }
+.fl-item:hover .item-img img {
+    -ms-transform: scale(.8);
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+}
 .fl-item .read-box .readmore:hover {
     background-color: #ff7e00;
     color: #fff;
@@ -187,6 +155,10 @@ header{
     position: relative;
     overflow: hidden;
 }
+.overlay {
+    background-color: rgba(3, 3, 3, 0.5);
+    overflow: hidden;
+}
 .newsletter .section-title {
     text-align: center;
     color: #fff;
@@ -199,7 +171,9 @@ header{
     color: #e3dede;
     margin-top: 10px;
 }
-
+.section-content {
+    margin: 0 auto;
+}
 .news-form {
     width: 100%;
     position: relative;
@@ -213,14 +187,8 @@ header{
     padding: 23px;
     border-radius: 30px;
     background-color: transparent;
-    color: #fff;
+    color: #f8f9fa;
 }
-
-.news-form ::placeholder{
-    color: #F5F3F4;
-    font-weight: 400;
-}
-
 .news-form .form-btn {
     padding: 10px 75px;
     border: 1px solid #fff;
@@ -234,42 +202,22 @@ header{
     right: 0;
     cursor: pointer;
 }
-.news-form .form-btn:hover {
-    border: 1px solid #f37112;
-    background-color: #f37112;
-    color: #fff;
+.news-form .form-btn:hover{
+	background-color: orange;
 }
-.article{
+.article {
     width: 100%;
     float: left;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
 }
-.article .overlay{
+.article .overlay {
     background-color: transparent;
 }
 .grid .grid-content {
     float: left;
     padding: 25px;
-}
-.grid .grid-img {
-    float: left;
-    padding: 25px 0;
-}
-.grid .grid-img img{
-    max-width: 100%;
-    transition: all 0.3s linear;
-}
-.grid .grid-img{
-    text-align: right;
-}
-
-.grid:hover .grid-img img{
-    -ms-transform: scale(.8);
-    -webkit-transform: scale(.8);
-    -o-transform: scale(.8);
-    transform: scale(.8);
 }
 .grid .grid-content h2 {
     margin-top: 10%;
@@ -287,7 +235,28 @@ header{
     overflow: hidden;
     display: block;
 }
-.article .signup-box .signup-btn-one,.article .signup-box .signup-btn-two {
+.article .signup-box .signup-btn-one {
+    background: #ff4800;
+}
+
+
+.grid .grid-img img {
+    max-width: 100%;
+    transition: all 0.3s linear;
+}
+.grid .grid-img {
+    text-align: right;
+    float: left;
+    padding: 25px 0;
+}
+.article .signup-box {
+    width: 30%;
+    float: left;
+    margin-top: 5%;
+    overflow: hidden;
+    display: block;
+}
+.article .signup-box .signup-btn-one, .article .signup-box .signup-btn-two {
     padding: 10px 40px;
     color: #fff;
     border: none;
@@ -296,21 +265,25 @@ header{
     display: block;
     text-align: center;
 }
-.article .signup-box .signup-btn-one {
-    background: #ff4800;
+.article .signup-box .signup-btn-two {
+    background: #4B4D73;
+    padding: 10px 40px;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    display: block;
+    text-align: center;
 }
 .article .signup-box .signup-btn-one:hover {
     background: #4B4D73;
     text-decoration: none;
 }
-.article .signup-box .signup-btn-two {
-    background: #4B4D73;
-}
 .article .signup-box .signup-btn-two:hover {
     background: #ff4800;
     text-decoration: none;
 }
-.quick-link{
+.quick-link {
     width: 100%;
     float: left;
     background-color: #D75D0E;
@@ -318,19 +291,18 @@ header{
     overflow: hidden;
     margin: 0 auto;
 }
-.quick-link .overlay{
+.quick-link .overlay {
     background-color: transparent;
 }
 .quick-link .ql-grid {
     float: left;
     overflow: hidden;
     margin: 5% auto;
-
 }
 .quick-link .ql-grid h2 {
     text-align: center;
     font-size: 16px;
-    color: transparent;
+    /* color: transparent; */
 }
 .ql-grid ul {
     width: 100%;
@@ -341,16 +313,12 @@ header{
     text-align: center;
     margin: 5px 0;
 }
-.ql-grid ul li a{
+.ql-grid ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 14px;
 }
-.ql-grid ul li a:hover{
-    color: #212121;
-}
-.footer{
-
+.footer {
     width: 100%;
     float: left;
     background-color: #D75D0E;
@@ -361,6 +329,10 @@ header{
     position: relative;
     overflow: hidden;
     margin: 0 auto;
+}
+.overlay {
+    background-color: rgba(3, 3, 3, 0.5);
+    overflow: hidden;
 }
 .footer h5 {
     text-align: center;
@@ -377,12 +349,14 @@ header{
     margin-bottom: 10%;
     margin-top: 5px;
 }
+
 .footer p span a {
     color: #fff;
     font-weight: 500;
+    text-decoration: none;
 }
-.footer p span a:hover {
-    color: #ffa812;
+.go-top.show {
+    display: block;
 }
 .go-top {
     display: none;
@@ -396,20 +370,8 @@ header{
     width: 50px;
     height: 50px;
 }
-.go-top.show{
-    display: block;
-}
-
-.go-top.hide{
-    display: none;
-}
 .go-top i {
     font-size: 20px;
     font-weight: 700;
     margin-left: 5px;
-}
-
-
-.go-top:hover{
-    color: #fff;
 }
